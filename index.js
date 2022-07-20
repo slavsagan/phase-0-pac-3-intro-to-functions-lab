@@ -37,7 +37,7 @@ console.log (sayHiToHeadphonedRoommate("Let\'s have dinner together!"))
   function sayHiToHeadphonedRoommate(string) {
  
     switch (string) {  
-      case string.toLowerCase():git stat
+      case string.toLowerCase():
        return "I can\'t hear you!"
       case string.toUpperCase():
        return "YES INDEED!"
