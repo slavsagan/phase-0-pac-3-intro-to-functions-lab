@@ -16,8 +16,17 @@ function logWhisper(string) {
   console.log (string.toLowerCase())
 }
 console.log('HELLO')
-/*-------------------Version 1-------------------------*/
+/*---------Version 1--Ternary------------------------*/
+function sayHiToHeadphonedRoommate(string) {
 
+  return string === string.toLowerCase() ? (string = "I can\'t hear you!")
+       : string === string.toUpperCase() ? (string = "YES INDEED!")
+       : string === "Let\'s have dinner together!" ? (string = "I would love to!")
+       : string = "UPS"
+}
+console.log (sayHiToHeadphonedRoommate("Let\'s have dinner together!"))
+/*-------- Version 2---else if------------------------*/
+/*
 function sayHiToHeadphonedRoommate(string) {
   if (string === string.toLowerCase()) {
     return "I can\'t hear you!" 
@@ -31,8 +40,8 @@ function sayHiToHeadphonedRoommate(string) {
 console.log (sayHiToHeadphonedRoommate("Hello"))
 console.log (sayHiToHeadphonedRoommate("HELLO"))
 console.log (sayHiToHeadphonedRoommate("Let\'s have dinner together!"))
-
-/*-------------------Version 2-------------------------*/
+*/
+/*-------------------Version 2--Switch-----------------------*/
 /*
   function sayHiToHeadphonedRoommate(string) {
  
